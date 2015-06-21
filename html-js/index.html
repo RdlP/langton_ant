@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Hormiga de Langton</title>
+	<meta charset="utf-8"/> 
+</head>
+<body>
+	<p><h1>Hormiga de Lagton</h1></p>
+	<p>Simulación de la hormiga de langton. <a href="https://es.wikipedia.org/wiki/Hormiga_de_Langton">https://es.wikipedia.org/wiki/Hormiga_de_Langton</a></p>
+	<p><strong>Breve explicación</strong></p>
+	<p>Las reglas son sencillas, de la versión clasica (patrón "rl") son sencillas y las comprobaciones que hace en cada paso son las siguientes:
+		<ul>
+			<li>Si está sobre un cuadrado blanco, cambia el color del cuadrado, gira noventa grados a la derecha y avanza un cuadrado.</li>
+			<li>Si está sobre un cuadrado negro, cambia el color del cuadrado, gira noventa grados a la izquierda y avanza un cuadrado.</li>
+		</ul></p>
+
+	<p><strong>Comportamiento</strong></p>
+	<p>
+		Las simples reglas que gobiernan a la hormiga de Langton llevan a comportamientos complejos que han sido objeto de múltiples investigaciones.3 Comenzando con una rejilla totalmente blanca, la versión clásica presenta tres tipos de comportamiento aparentes:
+		<ul>
+			<li><strong>Simplicidad</strong>: durante los primeros cientos de pasos, la hormiga crea patrones sencillos y frecuentemente simétricos.</li>
+			<li><strong>Caos</strong>: luego de varios cientos de pasos, aparece un patrón grande e irregular. La hormiga sigue un camino aparentemente azaroso hasta los 10.000 pasos.</li>
+			<li><strong>Orden emergente</strong>: finalmente la hormiga empieza a construir una «avenida», un patrón de 104 pasos que se repite indefinidamente.</li>
+		</ul>
+
+	patrones interesantes: 
+	<ul>
+		<li>rlr</li>
+		<li>llrr</li>
+		<li>lrrrrrllr</li>
+		<li>llrrrlrlrllr</li>
+		<li>rrlllrlllrrr</li>
+	</ul>
+	</p>
+
+<p>PASOS:
+<span id="steps"></span></p>
+<p>Patrón: <input type="text" value="rl" id="pattern"/>
+<input type="button" value="Resetear" id="btnReset"/></p>
+<p><canvas id="canvas"/></p>
+
+<script src="app.js"> </script>
+</body>
+</html>
